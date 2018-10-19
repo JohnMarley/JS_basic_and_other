@@ -1,0 +1,40 @@
+<!doctype html>
+<meta charset="utf-8"> 
+<html>
+<body>
+	<script type="text/javascript">
+	v"use strict";
+
+var salaries = {
+  "Вася": 100,
+  "Петя": 300,
+  "Даша": 250
+};
+
+var maxSalary;
+var name;
+
+for (var key in salaries) {
+if (maxSalary<salaries[key]){
+maxSalary=salaries[key];
+name=key;
+	}
+}
+
+alert(name||'no emploeers');
+
+/*	var menu = {
+  width: 300,
+  height: 200,
+  title: "Menu"
+};
+
+for (var key in menu) {
+  // этот код будет вызван для каждого свойства объекта
+  // ..и выведет имя свойства и его значение
+
+  alert( "Ключ: " + key + " значение: " + menu[key] );
+}*/
+
+	</script>
+</body>
